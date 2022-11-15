@@ -4,13 +4,13 @@ import send
 def main():
 
     # search term displays product
-    search_term.in_products('best earbuds for sleeping', 'quieton.com')
+    search_term.domain_in_products('best earbuds for sleeping', 'quieton.com')
 
     # search term displays ads
-    search_term.in_ads('b2b markkinointitoimisto', 'valve.fi')
+    search_term.domain_in_ads('b2b markkinointitoimisto', 'valve.fi')
 
     # search term displays result
-    search_term.in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+    search_term.domain_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
 
     # send email
     # send.email('matti.meikalainen@esimerkki.fi', 'Sähköpostin otsikko', 'Sähköpostin sisältö')
