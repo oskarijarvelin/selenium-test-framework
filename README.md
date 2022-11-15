@@ -2,11 +2,15 @@
 
 Download WebFriver for Chome from [chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
 
+Create API Keys for SendGrid [here](https://docs.sendgrid.com/ui/account-and-settings/api-keys)
+
+Install depencies: `pip install selenium python_dotenv sendgrid`
+
 Receive alerts by
 - Email (free)
 - Slack (free)
-- Text message (pro)
-- WhatsApp message (pro)
+- Text message (~$0.09 / alert, first 1 000 alerts in month for free)
+- WhatsApp message (~$0,14 / alert, first 1 000 alerts in month for free)
 
 ## Test types
 

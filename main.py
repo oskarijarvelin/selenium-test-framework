@@ -1,7 +1,10 @@
 import search_term
+import metrics
 import send
 
 def main():
+
+    metrics.performance('https://myynninmaailma.fi')
 
     # search term displays product
     search_term.domain_in_products('best earbuds for sleeping', 'quieton.com')
