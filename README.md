@@ -14,28 +14,36 @@ Receive alerts by
 
 ## Test types
 
-### Domain in search when using spesific phrase in Google
+### Google Search
 
 Product cards
 ```python
  # search term displays product
-search_term.domain_in_products('best earbuds for sleeping', 'quieton.com')
+domain_in_products('best earbuds for sleeping', 'quieton.com')
 ```
 
 Ads
 ```python
 # search term displays ads
-search_term.domain_in_ads('b2b markkinointitoimisto', 'valve.fi')
+domain_in_ads('b2b markkinointitoimisto', 'valve.fi')
 ```
 
 Results
 ```python
 # search term displays result
-search_term.domain_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+domain_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
 ```
 
 Position in results
 ```python
 # domain position in search results for search term
-search_term.domain_position_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+domain_position_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+```
+
+### Lighthouse
+
+Performance
+```python
+ # Get performance score
+performance('https://myynninmaailma.fi')
 ```

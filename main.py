@@ -1,25 +1,25 @@
-import sys
-sys.path.insert(1, 'tests')
-
-import search_term
-import metrics
+from tests.lighthouse import performance
+from tests.google_search import domain_in_products
+from tests.google_search import domain_in_ads
+from tests.google_search import domain_in_results
+from tests.google_search import domain_position_in_results
 import send
 
 def main():
 
-    # metrics.performance('https://myynninmaailma.fi')
+    # performance('https://myynninmaailma.fi')
 
     # search term displays product
-    # search_term.domain_in_products('best earbuds for sleeping', 'quieton.com')
+    # domain_in_products('best earbuds for sleeping', 'quieton.com')
 
     # search term displays ads
-    # search_term.domain_in_ads('b2b markkinointitoimisto', 'valve.fi')
+    # domain_in_ads('b2b markkinointitoimisto', 'valve.fi')
 
     # search term displays result
-    # search_term.domain_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+    # domain_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
 
     # search term position in search results
-    search_term.domain_position_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+    domain_position_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
 
     # send email
     # send.email('matti.meikalainen@esimerkki.fi', 'Sähköpostin otsikko', 'Sähköpostin sisältö')
