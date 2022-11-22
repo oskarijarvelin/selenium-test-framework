@@ -33,3 +33,9 @@ Results
 # search term displays result
 search_term.domain_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
 ```
+
+Position in results
+```python
+# domain position in search results for search term
+search_term.domain_position_in_results('b2b markkinointitoimisto', 'myynninmaailma.fi')
+```
